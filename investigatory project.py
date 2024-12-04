@@ -1,3 +1,9 @@
+import mysql.connector as conec
+con=conec.connect(host="localhost",user="root", password="2007", database="ip")
+#refer for fetching
+mycursor=con.cursor()
+
+
 def read_lines(file_path, num_lines):
     lines = []
     with open(file_path, 'r') as file:
